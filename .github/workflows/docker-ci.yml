@@ -33,6 +33,7 @@ jobs:
 
       - name: Install Chrome Web Browser
         run: sudo apt-get -y install google-chrome-stable
+        run: pip install webdriver-manager
 
       - name: Install Chrome Web Driver
         run: selenium/manager/linux/selenium-manager --browser chrome
