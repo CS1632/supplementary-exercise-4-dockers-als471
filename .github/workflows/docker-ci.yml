@@ -32,7 +32,7 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Install Chrome Web Browser
-        run: sudo apt-get -y install chromium-browser=112.0.5615.49-0ubuntu0.18.04.1
+        run: apt-get install chromium-browser=112.0.5615.49-0ubuntu0.18.04.1
         
       - name: Install Chrome Web Driver
         run: selenium/manager/linux/selenium-manager --browser chrome
