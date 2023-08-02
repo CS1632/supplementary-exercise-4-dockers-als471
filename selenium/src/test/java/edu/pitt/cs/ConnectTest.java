@@ -39,6 +39,7 @@ public class ConnectTest {
   public void setUp() {
     //driver = new ChromeDriver();
 
+    System.setProperty("webdriver.chrome.driver", "C:/Users/adele/.cache/selenium/chromedriver/win32/114.0.5735.90/chromedriver.exe");
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
     driver = new ChromeDriver(options);
@@ -56,4 +57,5 @@ public class ConnectTest {
     // Test that the webserver is ready to service an HTTP request
     driver.get("http://localhost:8080/");
   }
+  
 }
