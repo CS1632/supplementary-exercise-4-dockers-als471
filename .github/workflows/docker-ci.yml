@@ -32,10 +32,7 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Install Chrome Web Browser
-        run: sudo apt-get -y install google-chrome-stable
-        
-      - name: Testing Chrome
-        run: pip install webdriver-manager
+        run: sudo apt install chromium-chromedriver
 
       - name: Install Chrome Web Driver
         run: selenium/manager/linux/selenium-manager --browser chrome
