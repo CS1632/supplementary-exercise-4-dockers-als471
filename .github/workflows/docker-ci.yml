@@ -34,9 +34,6 @@ jobs:
       - name: Install Chrome Web Browser
         run: sudo apt-get -y install google-chrome-stable
 
-      - name: Install Chrome Web Driver
-        run: selenium/manager/linux/selenium-manager --browser google-chrome-stable
-
       - name: Launch Web Service
         run: docker-compose up -d
 
