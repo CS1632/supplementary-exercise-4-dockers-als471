@@ -35,7 +35,7 @@ jobs:
         run: docker-compose up -d
 
       - name: Wait for Web Service to Lauch
-        run: bin/sh wait-for-webserver.sh
+        run: /bin/sh wait-for-webserver.sh
 
       - name: Run Selenium Tests
         run: cd selenium && mvn test
