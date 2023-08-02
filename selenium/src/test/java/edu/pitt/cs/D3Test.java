@@ -39,7 +39,7 @@ public class D3Test {
 
   @Before
   public void setUp() {
-    System.setProperty("webdriver.chrome.driver", "C:/Users/adele/.cache/selenium/chromedriver/win32/114.0.5735.90/chromedriver.exe");
+    //System.setProperty("webdriver.chrome.driver", "C:/Users/adele/.cache/selenium/chromedriver/win32/114.0.5735.90/chromedriver.exe");
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
     options.addArguments("--disable-notifications");
