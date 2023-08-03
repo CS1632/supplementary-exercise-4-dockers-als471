@@ -31,9 +31,15 @@ jobs:
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v2
 
+      - name: Install Chrome Web Browser
+        run: sudo apt-get -y install google-chrome-stable
+
+      - name: Install Chrome Web Driver
+        run: selenium/manager/linux/selenium-manager --browser chrome
+
       - name: Launch Web Service
         run: docker-compose up -d
-
+        
       - name: Wait for Web Service to Lauch
         run: /bin/sh wait-for-webserver.sh
 
